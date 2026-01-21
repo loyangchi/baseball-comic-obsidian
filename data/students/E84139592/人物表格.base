@@ -1,0 +1,22 @@
+views:
+  - type: table
+    name: 人物
+    filters:
+      and:
+        - file.inFolder("人物")
+    order:
+      - file.name
+      - 生日
+      - 身高
+      - 體重
+      - 性別
+      - 球員時期背號
+      - 球員時期隊伍
+      - 經歷
+    sort:
+      - property: 體重
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 表格
